@@ -17,8 +17,16 @@ public class SDO_US01_TC01 {
     @Given(":Kullanici {string} anasayfaya gider")
     public void kullanici_anasayfaya_gider(String string) {
         Driver.getDriver().get(ConfigReader.getProperty("url"));
-        ReusableMethods.bekle(1);
+    }
+
+    @Given(":Cerez bildirimini kabul eder")
+    public void cerez_bildirimini_kabul_eder() {
         homePage.cookieAccept.click();
+        ReusableMethods.bekle(1);
+    }
+
+    @Given(":Bildirim Gonderme Talebini Yanitlar")
+    public void bildirim_gonderme_talebini_yanitlar() {
         homePage.bildiritHayir.click();
         ReusableMethods.bekle(1);
     }
@@ -76,5 +84,56 @@ public class SDO_US01_TC01 {
     @Given(":Manset Slider'inin gorunur oldugunu dogrular")
     public void manset_slider_inin_gorunur_oldugunu_dogrular() {
         Assert.assertTrue(homePage.mansetSliderHeadLineNews1.isDisplayed());
+    }
+
+    @Given(":Banner'in gorunur oldugunu dogrular")
+    public void banner_in_gorunur_oldugunu_dogrular() {
+        Assert.assertTrue(homePage.bannerHomePage.isDisplayed());
+    }
+
+    @Given(":Ekonomi bolum basliginin gorunur oldugunu dogrular")
+    public void ekonomi_bolum_basliginin_gorunur_oldugunu_dogrular() {
+        Actions action = new Actions(Driver.getDriver());
+        action.keyDown(Keys.CONTROL).sendKeys(homePage.ekonomiBolumBasligi).build().perform();
+        Assert.assertTrue(homePage.ekonomiBolumBasligi.isDisplayed());
+    }
+
+    @Given(":Saglik bolum basliginin gorunur oldugunu dogrular")
+    public void saglik_bolum_basliginin_gorunur_oldugunu_dogrular() {
+        Actions action = new Actions(Driver.getDriver());
+        action.keyDown(Keys.CONTROL).sendKeys(homePage.saglikBolumBasligi).build().perform();
+        Assert.assertTrue(homePage.saglikBolumBasligi.isDisplayed());
+    }
+
+    @Given(":Yerel Haberler bolum basliginin gorunur oldugunu dogrular")
+    public void yerel_haberler_bolum_basliginin_gorunur_oldugunu_dogrular() {
+        Actions action = new Actions(Driver.getDriver());
+        action.keyDown(Keys.CONTROL).sendKeys(homePage.yerelHaberlerBolumBasligi).build().perform();
+        Assert.assertTrue(homePage.yerelHaberlerBolumBasligi.isDisplayed());
+    }
+
+    @Given(":Sayfa sonuna scroll yapar")
+    public void sayfa_sonuna_scroll_yapar() {
+        Actions action = new Actions(Driver.getDriver());
+        action.keyDown(Keys.CONTROL).sendKeys(homePage.facebookIkonuHomePageFooter).build().perform();
+    }
+
+    @Given(":Sosyal Medya ikonlarinin gorunur oldugunu dogrular")
+    public void sosyal_medya_ikonlarinin_gorunur_oldugunu_dogrular() {
+        Assert.assertTrue(homePage.facebookIkonuHomePageFooter.isDisplayed());
+        Assert.assertTrue(homePage.twitterIkonuHomePageFooter.isDisplayed());
+        Assert.assertTrue(homePage.instagramIkonuHomePageFooter.isDisplayed());
+        Assert.assertTrue(homePage.youtubeIkonuHomePageFooter.isDisplayed());
+        Assert.assertTrue(homePage.sondakikaonIkonuHomePageFooter.isDisplayed());
+    }
+
+    @Given(":Footer'in gorunur oldugunu dogrular")
+    public void footer_in_gorunur_oldugunu_dogrular() {
+        Assert.assertTrue(homePage.footerHomePage.isDisplayed());
+    }
+
+    @Given(":Marka Bandi'nin gorunur oldugunu dogrular")
+    public void marka_bandi_nin_gorunur_oldugunu_dogrular() {
+        Assert.assertTrue(homePage.markaBandiHomePage.isDisplayed());
     }
 }
