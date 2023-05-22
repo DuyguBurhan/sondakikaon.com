@@ -4,7 +4,6 @@ import io.cucumber.java.en.Given;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
-import pages.footerDetails;
 import pages.homePage;
 import utilities.Driver;
 import utilities.ReusableMethods;
@@ -14,8 +13,7 @@ import java.util.Set;
 
 public class SDO_US02 {
 
-    footerDetails footerDetails = new footerDetails();
-    pages.homePage homePage = new homePage();
+    homePage homePage = new homePage();
     Actions action = new Actions(Driver.getDriver());
     String ilkSayfaHandle = Driver.getDriver().getWindowHandle();
 
@@ -32,7 +30,6 @@ public class SDO_US02 {
         String homepageURL = Driver.getDriver().getCurrentUrl();
         ReusableMethods.bekle(2);
         String expectedURL = "https://www.sondakikaon.com/";
-
         Assert.assertEquals(expectedURL, homepageURL); // logoya tiklandiginda anasayfaya donuyor
     }
 
@@ -48,7 +45,6 @@ public class SDO_US02 {
 
     @Given(":Verifies redirection to Facebook Page")
     public void verifies_redirection_to_facebook_page() {
-        //String ilkSayfaHandle = Driver.getDriver().getWindowHandle();
         Driver.getDriver().switchTo().window(ilkSayfaHandle);
         Set<String> windowHandleSeti = Driver.getDriver().getWindowHandles();
         String facebookPageHandle = "";
@@ -57,9 +53,7 @@ public class SDO_US02 {
                 facebookPageHandle = each;
             }
         }
-
         Driver.getDriver().switchTo().window(facebookPageHandle); // yeni tab'da Facebook sayfasina gecer
-
         String expectedURL = "https://www.facebook.com/sondakikaoncom/";
         String actualURL = Driver.getDriver().getCurrentUrl(); // facebook URL'ini alir
         Assert.assertEquals(expectedURL, actualURL); // dogrulama yapar
@@ -82,9 +76,7 @@ public class SDO_US02 {
                 instagramPageHandle = each;
             }
         }
-
         Driver.getDriver().switchTo().window(instagramPageHandle); // yeni tab'da instagram sayfasina gecer
-
         String expectedURL = "https://www.instagram.com/sondakikaon/";
         String actualURL = Driver.getDriver().getCurrentUrl(); // instagram sayfa URL'ini alir
         Assert.assertEquals(expectedURL, actualURL); // dugrulama yapar
@@ -108,7 +100,6 @@ public class SDO_US02 {
             }
         }
         Driver.getDriver().switchTo().window(twitterPageHandle); //  Yeni Tab'da twitter sayfasina gecer
-
         String expectedURL = "https://twitter.com/sondakikaon/";
         String actualURL = Driver.getDriver().getCurrentUrl(); // twitter sayfa URL'ini alir
         Assert.assertEquals(expectedURL, actualURL); // dugrulama yapar
@@ -121,10 +112,6 @@ public class SDO_US02 {
 
     @Given(":Clicks on Youtube icon")
     public void clicks_on_youtube_icon() {
-       /*String ilkSayfaHandle = Driver.getDriver().getWindowHandle();
-        Driver.getDriver().switchTo().window(ilkSayfaHandle); // anasayfaya geri doner
-        ReusableMethods.bekle(3);
-        action.keyDown(Keys.CONTROL).sendKeys(homePage.youtubeIkonuHomePageFooter).build().perform();*/
         homePage.youtubeIkonuHomePageFooter.click();
         ReusableMethods.bekle(3);
     }
@@ -139,13 +126,10 @@ public class SDO_US02 {
                 youtubePageHandle = each;
             }
         }
-
         Driver.getDriver().switchTo().window(youtubePageHandle); // yeni tab'da Youtube sayfasina gecer
-
         String expectedURL = "https://www.youtube.com/channel/";
         String actualURL = Driver.getDriver().getCurrentUrl(); // Youtube URL'ini alir
         Assert.assertTrue(actualURL.contains(expectedURL)); // dogrulama yapar
-
     }
 
     @Given(":Clicks on RSS icon")
@@ -167,12 +151,29 @@ public class SDO_US02 {
                 RSSpageHandle = each;
             }
         }
-
-        //Driver.getDriver().switchTo().window(RSSpageHandle); // yeni tab'da RSS sayfasina gecer
-
         String expectedURL = "https://www.sondakikaon.com/rss/anasayfa/";
         String actualURL = Driver.getDriver().getCurrentUrl(); // RSS sayfa URL'ini alir
         Assert.assertEquals(expectedURL, actualURL); // dugrulama yapar
+    }
+
+    @Given(":Clicks on Cookie Policy")
+    public void clicks_on_cookie_policy() {
+        homePage.cerezPolitikasiFooter.click();
+    }
+
+    @Given(":Verifies that you have been redirected to the Cookie Policy page")
+    public void verifies_that_you_have_been_redirected_to_the_cookie_policy_page() {
+        Assert.assertTrue(homePage.cookieTextCookiePage.isDisplayed());
+    }
+
+    @Given(":Clicks on Media Internet in the Brand Band")
+    public void clicks_on_media_internet_in_the_brand_band() {
+        homePage.medyaInternetButtonBrandBand.click();
+    }
+
+    @Given(":Verifies being redirected to the Media Internet page")
+    public void verifies_being_redirected_to_the_media_internet_page() {
+        Assert.assertTrue(homePage.medyainternetLogo.isDisplayed());
     }
 }
 
