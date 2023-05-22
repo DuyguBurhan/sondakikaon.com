@@ -13,9 +13,9 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "stepdefinitions",
         tags = "@run",
-        dryRun = false
+        dryRun = true
 )
 
-public class runner {
+public class sondakikaonTest {
 
 }

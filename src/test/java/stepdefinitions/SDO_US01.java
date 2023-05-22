@@ -10,24 +10,23 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
-public class SDO_US01_TC01 {
+public class SDO_US01 {
 
     homePage homePage = new homePage();
 
-    @Given(":Kullanici {string} anasayfaya gider")
-    public void kullanici_anasayfaya_gider(String string) {
+    @Given(":User goes to {string} homepage")
+    public void user_goes_to_homepage(String string) {
         Driver.getDriver().get(ConfigReader.getProperty("url"));
     }
 
-    @Given(":Cerez bildirimini kabul eder")
-    public void cerez_bildirimini_kabul_eder() {
+    @Given(":Accepts Cookie")
+    public void accepts_cookie() {
         homePage.cookieAccept.click();
         ReusableMethods.bekle(1);
     }
-
-    @Given(":Bildirim Gonderme Talebini Yanitlar")
-    public void bildirim_gonderme_talebini_yanitlar() {
-        homePage.bildiritHayir.click();
+    @Given(":Responds to notification sending request")
+    public void responds_to_notification_sending_request() {
+        homePage.cookieNo.click();
         ReusableMethods.bekle(1);
     }
 
@@ -36,8 +35,8 @@ public class SDO_US01_TC01 {
         Assert.assertTrue(homePage.logo.isDisplayed());
     }
 
-    @Then(":Sayfayi kapatir")
-    public void sayfayi_kapatir() {
+    @Then(":Closes the page")
+    public void closes_the_page() {
         Driver.quitDriver();
     }
 
@@ -124,7 +123,7 @@ public class SDO_US01_TC01 {
         Assert.assertTrue(homePage.twitterIkonuHomePageFooter.isDisplayed());
         Assert.assertTrue(homePage.instagramIkonuHomePageFooter.isDisplayed());
         Assert.assertTrue(homePage.youtubeIkonuHomePageFooter.isDisplayed());
-        Assert.assertTrue(homePage.sondakikaonIkonuHomePageFooter.isDisplayed());
+        Assert.assertTrue(homePage.RSSikonuHomePageFooter.isDisplayed());
     }
 
     @Given(":Footer'in gorunur oldugunu dogrular")

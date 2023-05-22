@@ -65,7 +65,7 @@ public class homePage {
     public WebElement cookieAccept;
 
     @FindBy(xpath = "//div[@id='BildirtHayir']")
-    public WebElement bildiritHayir;
+    public WebElement cookieNo;
 
     @FindBy(xpath = "//div[@class='hn-pagination flex w-full py-1 bg-white justify-between px-0.5 swiper-pagination-bullets swiper-pagination-horizontal']")
     public WebElement mansetSliderNumaraButtonlari;
@@ -95,7 +95,7 @@ public class homePage {
     public WebElement youtubeIkonuHomePageFooter;
 
     @FindBy(xpath = "(((//ul[@class='flex flex-wrap pt-0 lg:pt-4 pb-4 justify-center lg:justify-end'])[2])//li)[5]")
-    public WebElement sondakikaonIkonuHomePageFooter;
+    public WebElement RSSikonuHomePageFooter;
 
     @FindBy(xpath = "//div[@class='bg-footer']")
     public WebElement footerHomePage;
