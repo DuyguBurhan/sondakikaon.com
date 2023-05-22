@@ -103,4 +103,16 @@ public class homePage {
     @FindBy(xpath = "(//div[@class='bg-footer bg-opacity-90'])[2]")
     public WebElement markaBandiHomePage;
 
+    @FindBy(xpath = "(//li[@class='py-0.5'])[50]")
+    public WebElement cerezPolitikasiFooter;
+
+    @FindBy(xpath = "//div[@class='page-detail px-4 mt-4']")
+    public WebElement cookieTextCookiePage;
+
+    @FindBy(xpath = "((//a[@class='w-full flex flex-wrap items-center justify-center lg:justify-end text-xs text-gray-300 font-light text-center lg:text-right pt-0.5'])//span)[1]")
+    public WebElement medyaInternetButtonBrandBand;
+
+    @FindBy(xpath = "//div[@class='relative block px-5 xl:px-0 py-1']")
+    public WebElement medyainternetLogo;
+
 }

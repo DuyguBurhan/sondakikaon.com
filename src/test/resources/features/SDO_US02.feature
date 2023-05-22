@@ -1,4 +1,4 @@
-
+@run
 Feature:SDO_US02 VISITORS SHOULD BE ABLE TO CLİCK ON HOMEPAGE SECTİONS AND ICONS
 
   Background:User goes to homepage
@@ -32,15 +32,16 @@ Feature:SDO_US02 VISITORS SHOULD BE ABLE TO CLİCK ON HOMEPAGE SECTİONS AND ICO
     Given :Verifies redirection to RSS Page
     Then  :Closes the page
 
-  @run
- Scenario:TC_04 Cookie Notice should redirect to the relevant page
-   Given :Scrolls to end of page
-   Given :Clicks on Cookie Policy
-   Given :Verifies that you have been redirected to the Cookie Policy page
-   Then  :Closes the page
 
- # Scenario:TC_05 Brand band details should be accessible
- #   Given :Scrolls to end of page
- #   Given :Clicks on Media Internet in the Brand Band
- #   Given :Verifies being redirected to the Media Internet page
- #   Then  :Closes the page
+  Scenario:TC_04 Cookie Notice should redirect to the relevant page
+    Given :Scrolls to end of page
+    Given :Clicks on Cookie Policy
+    Given :Verifies that you have been redirected to the Cookie Policy page
+    Then  :Closes the page
+
+
+  Scenario:TC_05 Brand band details should be accessible
+    Given :Scrolls to end of page
+    Given :Clicks on Media Internet in the Brand Band
+    Given :Verifies being redirected to the Media Internet page
+    Then  :Closes the page
