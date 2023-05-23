@@ -3,15 +3,15 @@ package stepdefinitions;
 import io.cucumber.java.en.Given;
 import org.junit.Assert;
 import org.openqa.selenium.interactions.Actions;
-import pages.homePage;
-import pages.newsDetailsPage;
+import pages.HomePage;
+import pages.NewsDetailsPage;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
 public class SDO_US03 {
 
-    homePage homePage = new homePage();
-    newsDetailsPage newsDetailsPage = new newsDetailsPage();
+    HomePage homePage = new HomePage();
+    NewsDetailsPage newsDetailsPage = new NewsDetailsPage();
     Actions action = new Actions(Driver.getDriver());
 
 

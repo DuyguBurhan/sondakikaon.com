@@ -1,10 +1,9 @@
-@run
 Feature:SDO_US03 VISITORS SHOULD BE ABLE TO CLİCK ON THE MEGA MENU BUTTON AND ACCESS SUBCATEGORIES
 
   Background:User goes to homepage
     Given   :User goes to "url" homepage
     Given   :Accepts Cookie
-    #Given   :Responds to notification sending request
+    Given   :Responds to notification sending request
 
 
   Scenario:TC_01 Sub-headings and details of Balikesir Haber should be accessible

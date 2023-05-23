@@ -3,7 +3,7 @@ Feature:SDO_US02 VISITORS SHOULD BE ABLE TO CLİCK ON HOMEPAGE SECTİONS AND ICO
   Background:User goes to homepage
     Given   :User goes to "url" homepage
     Given   :Accepts Cookie
-    #Given   :Responds to notification sending request
+    Given   :Responds to notification sending request
 
 
   Scenario:TC_01 Logo should be clickable

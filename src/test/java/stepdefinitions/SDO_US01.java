@@ -5,14 +5,14 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
-import pages.homePage;
+import pages.HomePage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
 public class SDO_US01 {
 
-    homePage homePage = new homePage();
+    HomePage homePage = new HomePage();
 
     @Given(":User goes to {string} homepage")
     public void user_goes_to_homepage(String string) {
@@ -24,11 +24,12 @@ public class SDO_US01 {
         homePage.cookieAccept.click();
         ReusableMethods.bekle(1);
     }
-   /* @Given(":Responds to notification sending request")
+
+    @Given(":Responds to notification sending request")
     public void responds_to_notification_sending_request() {
         homePage.cookieNo.click();
         ReusableMethods.bekle(1);
-    }*/
+    }
 
     @Given(":sondakikaon logosunun gorunur oldugunu dogrular")
     public void sondakikaon_logosunun_gorunur_oldugunu_dogrular() {
