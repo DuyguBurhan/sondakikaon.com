@@ -24,11 +24,11 @@ public class SDO_US01 {
         homePage.cookieAccept.click();
         ReusableMethods.bekle(1);
     }
-    @Given(":Responds to notification sending request")
+   /* @Given(":Responds to notification sending request")
     public void responds_to_notification_sending_request() {
         homePage.cookieNo.click();
         ReusableMethods.bekle(1);
-    }
+    }*/
 
     @Given(":sondakikaon logosunun gorunur oldugunu dogrular")
     public void sondakikaon_logosunun_gorunur_oldugunu_dogrular() {
