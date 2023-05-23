@@ -1,9 +1,10 @@
+@run
 Feature:SDO_US01 ZIYERETCI ANASAYFADAKI BOLUM BASLIKLARINI GOREBILMELI
 
   Background:User goes to homepage
     Given   :User goes to "url" homepage
     Given   :Accepts Cookie
-    #Given   :Responds to notification sending request
+    Given   :Responds to notification sending request
 
 
   Scenario:TC_01 Logo Gorunur Olmali

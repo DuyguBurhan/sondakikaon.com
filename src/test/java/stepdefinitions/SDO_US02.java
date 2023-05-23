@@ -4,7 +4,7 @@ import io.cucumber.java.en.Given;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
-import pages.homePage;
+import pages.HomePage;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
@@ -13,7 +13,7 @@ import java.util.Set;
 
 public class SDO_US02 {
 
-    homePage homePage = new homePage();
+    HomePage homePage = new HomePage();
     Actions action = new Actions(Driver.getDriver());
     String ilkSayfaHandle = Driver.getDriver().getWindowHandle();
 
