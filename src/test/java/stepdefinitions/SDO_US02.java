@@ -68,7 +68,6 @@ public class SDO_US02 {
 
     @Given(":Verifies redirection to Instagram Page")
     public void verifies_redirection_to_instagram_page() {
-        //String ilkSayfaHandle = Driver.getDriver().getWindowHandle();
         Set<String> windowHandleSeti = Driver.getDriver().getWindowHandles();
         String instagramPageHandle = "";
         for (String each : windowHandleSeti) {

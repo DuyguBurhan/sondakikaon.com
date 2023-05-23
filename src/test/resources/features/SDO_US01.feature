@@ -3,7 +3,7 @@ Feature:SDO_US01 ZIYERETCI ANASAYFADAKI BOLUM BASLIKLARINI GOREBILMELI
   Background:User goes to homepage
     Given   :User goes to "url" homepage
     Given   :Accepts Cookie
-    Given   :Responds to notification sending request
+    #Given   :Responds to notification sending request
 
 
   Scenario:TC_01 Logo Gorunur Olmali
@@ -14,7 +14,6 @@ Feature:SDO_US01 ZIYERETCI ANASAYFADAKI BOLUM BASLIKLARINI GOREBILMELI
   Scenario:TC_02 Finansal Veriler Gorunur Olmali
     Given :Finansal Veriler bandinda Bist, Dolar, Euro ve Altın verilerinin gorundugunu dogrular
     Then  :Closes the page
-
 
   Scenario:TC_03 Menu gorunur olmali
     Given :Menu butonunun gorunur oldugunu dogrular

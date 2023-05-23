@@ -114,5 +114,4 @@ public class homePage {
 
     @FindBy(xpath = "//div[@class='relative block px-5 xl:px-0 py-1']")
     public WebElement medyainternetLogo;
-
 }
