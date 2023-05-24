@@ -24,6 +24,7 @@ public class Driver {
                 case "chrome" -> {
                     ChromeOptions ops = new ChromeOptions();
                     ops.addArguments("--remote-allow-origins=*");
+                    ops.addArguments("--disable-notification");
                     Map<String, Object> prefs = new HashMap<String, Object>();
                     prefs.put("download.prompt_for_download", false);
                     WebDriverManager.chromedriver().setup();
