@@ -1,4 +1,3 @@
-@run
 Feature:SDO_US01 ZIYERETCI ANASAYFADAKI BOLUM BASLIKLARINI GOREBILMELI
 
   Background:User goes to homepage

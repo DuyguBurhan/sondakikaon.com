@@ -53,7 +53,7 @@ public class HomePage {
     public WebElement bolgeHaberleriMenuHeader;
 
     @FindBy(xpath = "//ul[@class='flex items-center border-b border-white']")
-    public WebElement aramaButonuHomePage;
+    public WebElement searchButtonHomePage;
 
     @FindBy(xpath = "//div[@class='max-w-full lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl bg-sdkbbg mx-auto mt-4 flex justify-between brd']")
     public WebElement sonDakikaBandiHomePage;

@@ -67,7 +67,7 @@ public class SDO_US01 {
 
     @Given(":Arama butonunun gorunur oldugunu dogrular")
     public void arama_butonunun_gorunur_oldugunu_dogrular() {
-        Assert.assertTrue(homePage.aramaButonuHomePage.isDisplayed());
+        Assert.assertTrue(homePage.searchButtonHomePage.isDisplayed());
     }
 
     @Given(":sondakika Bandinin gorunur oldugunu dogrular")
