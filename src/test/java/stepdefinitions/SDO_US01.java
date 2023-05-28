@@ -130,6 +130,7 @@ public class SDO_US01 {
     @Given(":Footer'in gorunur oldugunu dogrular")
     public void footer_in_gorunur_oldugunu_dogrular() {
         Assert.assertTrue(homePage.footerHomePage.isDisplayed());
+
     }
 
     @Given(":Marka Bandi'nin gorunur oldugunu dogrular")
