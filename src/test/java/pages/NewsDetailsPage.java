@@ -150,4 +150,12 @@ public class NewsDetailsPage {
     // HomePage-->Manset Slider Numaraları--> Aktif numara
     @FindBy(xpath = "//a[@class='hn-paginate hn-paginate-active']")
     public WebElement activeNumbersOfHeadlineSlider; //numara listesinde,aktif olan numaranin path'i buna donusuyor
+
+    // HomePage-->Manset Sliderda 1 numara butonu
+    @FindBy(xpath = "//a[@data-id='0']")
+    public WebElement numberOneOfHeadlineSlider;
+
+    // HomePage-->Manset Slider'daki ilk Haber-->Acilan Haberin Basligi
+    @FindBy(xpath = "//h1[@class='font-mibitter font-black text-3xl lg:text-4xl 2xl:text-[2.75rem] text-mititle leading-tight lg:leading-snug 2xl:leading-tight py-2 news-title']")
+    public WebElement titleOfNewsOnNewPage;
 }
