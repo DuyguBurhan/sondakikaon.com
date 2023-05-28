@@ -20,6 +20,7 @@ public class SDO_US06 {
             case 0:
                 Assert.assertTrue(newsDetailsPage.activeNumbersOfHeadlineSlider.isDisplayed());
                 //Numara listesinde 1 numaranin aktif oldugunu dogrular
+                //aktif olan numaranin path'i "activeNumbersOfHeadlineSlider"a donusuyor,her yerde bu locate dogrulandi
                 listNumber++;
                 newsDetailsPage.nextHeadlineButton.click();
                 //sonraki haber butonuna tiklar
@@ -136,103 +137,103 @@ public class SDO_US06 {
                 Assert.assertTrue(newsDetailsPage.activeNumbersOfHeadlineSlider.isDisplayed());
                 //Numara listesinde 20 numaranin aktif oldugunu dogrular
                 listNumber++;
-                newsDetailsPage.previousTitleButton.click();
+                newsDetailsPage.previousHeadlineButton.click();
                 //onceki haber butonuna tiklar
                 ReusableMethods.bekle(1);
             case 18:
                 Assert.assertTrue(newsDetailsPage.activeNumbersOfHeadlineSlider.isDisplayed());
                 listNumber++;
-                newsDetailsPage.previousTitleButton.click();
+                newsDetailsPage.previousHeadlineButton.click();
                 ReusableMethods.bekle(1);
             case 17:
                 Assert.assertTrue(newsDetailsPage.activeNumbersOfHeadlineSlider.isDisplayed());
                 listNumber++;
-                newsDetailsPage.previousTitleButton.click();
+                newsDetailsPage.previousHeadlineButton.click();
                 ReusableMethods.bekle(1);
             case 16:
                 Assert.assertTrue(newsDetailsPage.activeNumbersOfHeadlineSlider.isDisplayed());
                 listNumber++;
-                newsDetailsPage.previousTitleButton.click();
+                newsDetailsPage.previousHeadlineButton.click();
                 ReusableMethods.bekle(1);
             case 15:
                 Assert.assertTrue(newsDetailsPage.activeNumbersOfHeadlineSlider.isDisplayed());
                 listNumber++;
-                newsDetailsPage.previousTitleButton.click();
+                newsDetailsPage.previousHeadlineButton.click();
                 ReusableMethods.bekle(1);
             case 14:
                 Assert.assertTrue(newsDetailsPage.activeNumbersOfHeadlineSlider.isDisplayed());
                 listNumber++;
-                newsDetailsPage.previousTitleButton.click();
+                newsDetailsPage.previousHeadlineButton.click();
                 ReusableMethods.bekle(1);
             case 13:
                 Assert.assertTrue(newsDetailsPage.activeNumbersOfHeadlineSlider.isDisplayed());
                 listNumber++;
-                newsDetailsPage.previousTitleButton.click();
+                newsDetailsPage.previousHeadlineButton.click();
                 ReusableMethods.bekle(1);
             case 12:
                 Assert.assertTrue(newsDetailsPage.activeNumbersOfHeadlineSlider.isDisplayed());
                 listNumber++;
-                newsDetailsPage.previousTitleButton.click();
+                newsDetailsPage.previousHeadlineButton.click();
                 ReusableMethods.bekle(1);
             case 11:
                 Assert.assertTrue(newsDetailsPage.activeNumbersOfHeadlineSlider.isDisplayed());
                 listNumber++;
-                newsDetailsPage.previousTitleButton.click();
+                newsDetailsPage.previousHeadlineButton.click();
                 ReusableMethods.bekle(1);
             case 10:
                 Assert.assertTrue(newsDetailsPage.activeNumbersOfHeadlineSlider.isDisplayed());
                 listNumber++;
-                newsDetailsPage.previousTitleButton.click();
+                newsDetailsPage.previousHeadlineButton.click();
                 ReusableMethods.bekle(1);
             case 9:
                 Assert.assertTrue(newsDetailsPage.activeNumbersOfHeadlineSlider.isDisplayed());
                 listNumber++;
-                newsDetailsPage.previousTitleButton.click();
+                newsDetailsPage.previousHeadlineButton.click();
                 ReusableMethods.bekle(1);
             case 8:
                 Assert.assertTrue(newsDetailsPage.activeNumbersOfHeadlineSlider.isDisplayed());
                 listNumber++;
-                newsDetailsPage.previousTitleButton.click();
+                newsDetailsPage.previousHeadlineButton.click();
                 ReusableMethods.bekle(1);
             case 7:
                 Assert.assertTrue(newsDetailsPage.activeNumbersOfHeadlineSlider.isDisplayed());
                 listNumber++;
-                newsDetailsPage.previousTitleButton.click();
+                newsDetailsPage.previousHeadlineButton.click();
                 ReusableMethods.bekle(1);
             case 6:
                 Assert.assertTrue(newsDetailsPage.activeNumbersOfHeadlineSlider.isDisplayed());
                 listNumber++;
-                newsDetailsPage.previousTitleButton.click();
+                newsDetailsPage.previousHeadlineButton.click();
                 ReusableMethods.bekle(1);
             case 5:
                 Assert.assertTrue(newsDetailsPage.activeNumbersOfHeadlineSlider.isDisplayed());
                 listNumber++;
-                newsDetailsPage.previousTitleButton.click();
+                newsDetailsPage.previousHeadlineButton.click();
                 ReusableMethods.bekle(1);
             case 4:
                 Assert.assertTrue(newsDetailsPage.activeNumbersOfHeadlineSlider.isDisplayed());
                 listNumber++;
-                newsDetailsPage.previousTitleButton.click();
+                newsDetailsPage.previousHeadlineButton.click();
                 ReusableMethods.bekle(1);
             case 3:
                 Assert.assertTrue(newsDetailsPage.activeNumbersOfHeadlineSlider.isDisplayed());
                 listNumber++;
-                newsDetailsPage.previousTitleButton.click();
+                newsDetailsPage.previousHeadlineButton.click();
                 ReusableMethods.bekle(1);
             case 2:
                 Assert.assertTrue(newsDetailsPage.activeNumbersOfHeadlineSlider.isDisplayed());
                 listNumber++;
-                newsDetailsPage.previousTitleButton.click();
+                newsDetailsPage.previousHeadlineButton.click();
                 ReusableMethods.bekle(1);
             case 1:
                 Assert.assertTrue(newsDetailsPage.activeNumbersOfHeadlineSlider.isDisplayed());
                 listNumber++;
-                newsDetailsPage.previousTitleButton.click();
+                newsDetailsPage.previousHeadlineButton.click();
                 ReusableMethods.bekle(1);
             case 0:
                 Assert.assertTrue(newsDetailsPage.activeNumbersOfHeadlineSlider.isDisplayed());
                 listNumber++;
-                newsDetailsPage.previousTitleButton.click();
+                newsDetailsPage.previousHeadlineButton.click();
                 ReusableMethods.bekle(1);
                 break;
             default:
