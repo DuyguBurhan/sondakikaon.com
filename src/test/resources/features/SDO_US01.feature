@@ -32,19 +32,19 @@ Feature:SDO_US01 ZIYERETCI ANASAYFADAKI BOLUM BASLIKLARINI GOREBILMELI
 
 
   Scenario:TC_06 Manset slider gorunur olmali
-    Given :Sayfayi kaydirir
+    Given :Scrolls the page
     Given :Manset Slider'inin gorunur oldugunu dogrular
     Then  :Closes the page
 
 
   Scenario:TC_07 Banner gorunur olmali
-    Given :Sayfayi kaydirir
+    Given :Scrolls the page
     Given :Banner'in gorunur oldugunu dogrular
     Then  :Closes the page
 
 
   Scenario:TC_08 Ekonomi, Saglik, Yerel Haberler basliklari gorunur olmali
-    Given :Sayfayi kaydirir
+    Given :Scrolls the page
     Given :Ekonomi bolum basliginin gorunur oldugunu dogrular
     Given :Saglik bolum basliginin gorunur oldugunu dogrular
     Given :Yerel Haberler bolum basliginin gorunur oldugunu dogrular

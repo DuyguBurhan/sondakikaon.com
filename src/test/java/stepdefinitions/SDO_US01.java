@@ -75,8 +75,8 @@ public class SDO_US01 {
         Assert.assertTrue(homePage.sonDakikaBandiHomePage.isDisplayed());
     }
 
-    @Given(":Sayfayi kaydirir")
-    public void sayfayi_kaydirir() {
+    @Given(":Scrolls the page")
+    public void scrolls_the_page() {
         Actions action = new Actions(Driver.getDriver());
         action.keyDown(Keys.CONTROL).sendKeys(homePage.mansetSliderNumaraButtonlari).build().perform();
     }

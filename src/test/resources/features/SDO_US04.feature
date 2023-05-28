@@ -1,4 +1,3 @@
-@run
 Feature:SDO_US04 VISITORS SHOULD BE ABLE TO SEARCH NEWS AND ARCHIVES NEWS
 
   Background:User goes to homepage
