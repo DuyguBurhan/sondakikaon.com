@@ -128,4 +128,8 @@ public class NewsDetailsPage {
     // HomePage--> Arama Butonu-->Kelimeye Gore Arama "Haberlerde Ara" Button--> Arsiveden gelen ilk haberin basligi
     @FindBy(xpath = "(//div[@class='absolute bottom-0 left-0 text-white font-bold px-4 py-3'])[1]")
     public WebElement searchResultNewsTitle2;
+
+    // HomePage-->Manset Slider'daki ilk Haber-->Acilan Haberin Tarihi
+    @FindBy(xpath = "((//ul[@class='text-xs lg:text-sm'])//li)[1]")
+    public WebElement dateOfNewsOnHeadlineSlider;
 }
