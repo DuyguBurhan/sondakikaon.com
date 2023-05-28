@@ -145,9 +145,9 @@ public class NewsDetailsPage {
 
     // HomePage-->Manset Sliderda "önceki manşet butonu"
     @FindBy(xpath = "//button[@class='hn-nav-btn-prev group hn-swiper-button-prev']")
-    public WebElement previousTitleButton;
+    public WebElement previousHeadlineButton;
 
     // HomePage-->Manset Slider Numaraları--> Aktif numara
     @FindBy(xpath = "//a[@class='hn-paginate hn-paginate-active']")
-    public WebElement activeNumbersOfHeadlineSlider;
+    public WebElement activeNumbersOfHeadlineSlider; //numara listesinde,aktif olan numaranin path'i buna donusuyor
 }
