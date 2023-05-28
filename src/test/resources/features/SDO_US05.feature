@@ -1,4 +1,3 @@
-@run
 Feature:SDO_US05 VISITORS SHOULD BE ABLE TO SEE THE NEWS DETAİLS FROM THE BREAKING NEWS BAND
 
   Background:User goes to homepage

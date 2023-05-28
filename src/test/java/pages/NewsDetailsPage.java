@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 public class NewsDetailsPage {
 
     public NewsDetailsPage() {
@@ -132,4 +134,20 @@ public class NewsDetailsPage {
     // HomePage-->Manset Slider'daki ilk Haber-->Acilan Haberin Tarihi
     @FindBy(xpath = "((//ul[@class='text-xs lg:text-sm'])//li)[1]")
     public WebElement dateOfNewsOnHeadlineSlider;
+
+    // HomePage-->Manset Slider'daki numaraların 1-20 dahil full class
+    @FindBy(xpath = "(//div[@class='hn-pagination flex w-full py-1 bg-white justify-between px-0.5 swiper-pagination-bullets swiper-pagination-horizontal'])//a")
+    public List<WebElement> numbersOfHeadlineSlider;
+
+    // HomePage-->Manset Sliderda "sonraki manşet butonu"
+    @FindBy(xpath = "//button[@class='hn-nav-btn-next group hn-swiper-button-next']")
+    public WebElement nextHeadlineButton;
+
+    // HomePage-->Manset Sliderda "önceki manşet butonu"
+    @FindBy(xpath = "//button[@class='hn-nav-btn-prev group hn-swiper-button-prev']")
+    public WebElement previousTitleButton;
+
+    // HomePage-->Manset Slider Numaraları--> Aktif numara
+    @FindBy(xpath = "//a[@class='hn-paginate hn-paginate-active']")
+    public WebElement activeNumbersOfHeadlineSlider;
 }
