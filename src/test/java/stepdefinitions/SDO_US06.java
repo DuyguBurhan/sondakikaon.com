@@ -48,8 +48,8 @@ public class SDO_US06 {
         } while (listNumber >= 0);
     }
 
-    @Given(":Clicks first number from Header Slider Numbers")
-    public void clicks_first_number_from_header_slider_numbers() {
+    @Given(":Clicks first number from Headline Slider Numbers")
+    public void clicks_first_number_from_headline_slider_numbers() {
         expectedTitle = (homePage.mansetSliderHeadLineNews1).getText();
         System.out.println("expected title : " + expectedTitle);
         newsDetailsPage.numberOneOfHeadlineSlider.click();
@@ -67,6 +67,21 @@ public class SDO_US06 {
             }
         }
         Driver.getDriver().switchTo().window(newPageNewsDetail);
+        action.keyDown(Keys.CONTROL).sendKeys(newsDetailsPage.titleOfNewsOnNewPage).build().perform();
+        String actualTitle = newsDetailsPage.titleOfNewsOnNewPage.getText();
+        System.out.println("actual title : " + actualTitle);
+        Assert.assertTrue(expectedTitle.contains(actualTitle));
+    }
+
+    @Given(":Clicks picture from Headline Slider")
+    public void clicks_picture_from_headline_slider() {
+        expectedTitle = (homePage.mansetSliderHeadLineNews1).getText();
+        System.out.println("expected title : " + expectedTitle);
+        newsDetailsPage.firstPictureOnHeadlineSlider.click();
+    }
+
+    @Given(":Verifies that it is directed to the detail of the news")
+    public void verifies_that_it_is_directed_to_the_detail_of_the_news() {
         action.keyDown(Keys.CONTROL).sendKeys(newsDetailsPage.titleOfNewsOnNewPage).build().perform();
         String actualTitle = newsDetailsPage.titleOfNewsOnNewPage.getText();
         System.out.println("actual title : " + actualTitle);
