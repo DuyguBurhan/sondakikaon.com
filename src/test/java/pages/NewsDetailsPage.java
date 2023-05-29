@@ -158,4 +158,14 @@ public class NewsDetailsPage {
     // HomePage-->Manset Slider'daki ilk Haber-->Acilan Haberin Basligi
     @FindBy(xpath = "//h1[@class='font-mibitter font-black text-3xl lg:text-4xl 2xl:text-[2.75rem] text-mititle leading-tight lg:leading-snug 2xl:leading-tight py-2 news-title']")
     public WebElement titleOfNewsOnNewPage;
+
+    // HomePage-->Manset Sliderda "ilk haberin resmi"
+    @FindBy(xpath = "(//div[@class='absolute top-0 left-0 bg-gradient-to-t from-black/75 via-black/0 w-full h-full'])[2]")
+    public WebElement firstPictureOnHeadlineSlider;
+
+    // HomePage-->Manset Sliderda "ilk haberin resmi"--> acilan haberin detayi
+    @FindBy(xpath = "//button[@class='hn-nav-btn-next group hn-swiper-button-next']")
+    public WebElement detailOfPictureNews;
+
+
 }

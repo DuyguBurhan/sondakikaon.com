@@ -1,4 +1,3 @@
-
 Feature:SDO_US06 VISITORS SHOULD BE ABLE TO SEE THE NEWS DETAİLS FROM THE BREAKING NEWS BAND
 
   Background:User goes to homepage
@@ -13,9 +12,15 @@ Feature:SDO_US06 VISITORS SHOULD BE ABLE TO SEE THE NEWS DETAİLS FROM THE BREAK
     Given :Clicks the previous news button and confirms that the Numbers have changed
     Then  :Closes the page
 
-  @run
   Scenario:TC_02 Clicking on the slider numbers should display the news detail.
     Given :Scrolls the page
-    Given :Clicks first number from Header Slider Numbers
+    Given :Clicks first number from Headline Slider Numbers
     Given :Verifies that it is directed to the detail of the first news
+    Then  :Closes the page
+
+  @run
+  Scenario:TC_03 Clicking on the slider image should display the news detail.
+    Given :Scrolls the page
+    Given :Clicks picture from Headline Slider
+    Given :Verifies that it is directed to the detail of the news
     Then  :Closes the page
