@@ -167,5 +167,17 @@ public class NewsDetailsPage {
     @FindBy(xpath = "//button[@class='hn-nav-btn-next group hn-swiper-button-next']")
     public WebElement detailOfPictureNews;
 
+    // HomePage-->Banner'da "ilk haberin resmi"
+    @FindBy(xpath = "((//div[@class='grid gap-4'])//div)[1]")
+    public WebElement pictureOfFirstBannerNews;
+
+    // HomePage-->Banner'da "ilk haberin basligi"
+    @FindBy(xpath = "((//div[@class='absolute bottom-0 left-0 text-white font-bold px-4 py-3'])//span)[1]")
+    public WebElement titleOfFirstBannerNews;
+
+    //HomePage-->Banner'da "ilk haberin resmi"--> acilan haberin detayi
+    @FindBy(xpath = "((//div[@class='grid gap-4'])//div)[1]")
+    public WebElement detailOfFirstBannerNews;
+
 
 }

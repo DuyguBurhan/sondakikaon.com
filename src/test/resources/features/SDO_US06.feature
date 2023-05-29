@@ -18,7 +18,7 @@ Feature:SDO_US06 VISITORS SHOULD BE ABLE TO SEE THE NEWS DETAİLS FROM THE BREAK
     Given :Verifies that it is directed to the detail of the first news
     Then  :Closes the page
 
-  @run
+
   Scenario:TC_03 Clicking on the slider image should display the news detail.
     Given :Scrolls the page
     Given :Clicks picture from Headline Slider
